@@ -21,14 +21,14 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background-color: #e4e4e4;
-  border-radius: 100px;
+  background-image: linear-gradient(to top,#FFFBFF, #f9eee3);
+  // border-radius: 100px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #d4aa70;
-  border-radius: 100px;
-  background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);
+  background-color: #F1DABF;
+  // border-radius: 100px;
+  background-image: var(--side-bar-bg);
   box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
-  border-radius: 100px;
+  // border-radius: 100px;
 }

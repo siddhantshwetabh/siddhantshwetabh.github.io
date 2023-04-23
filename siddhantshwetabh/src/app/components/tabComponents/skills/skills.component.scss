@@ -1,0 +1,22 @@
+.skills-main{
+    padding: 6vh 2vh 6vh 24vw;
+    background-image: var(--skills-bg);
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+
+    .one-skill{
+        width: 25%;
+        margin: 3%;
+        cursor: pointer;
+        
+        .icon{
+
+        }
+        .title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

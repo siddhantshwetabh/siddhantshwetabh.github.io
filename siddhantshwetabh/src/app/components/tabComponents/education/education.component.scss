@@ -1,19 +1,21 @@
 .education-container {
     padding: 1vh;
+    padding-left: 24vw;
+    background-image: var(--education-bg);
 
     .one-education-card {
         padding: 20px;
-        background-color: white;
+        background-color: inherit;
         border-radius: 12px;
-        font-size: 24px;
-        line-height: 40px;
+        font-size:16px;
+        line-height: 34px;
         text-align: justify;
         text-justify: inter-word;
-        margin-bottom: 2vh;
+        // margin-bottom: 1vh;
     }
 }
 
 .nmit-img {
-    width: 525px;
+    width: 475px;
     padding: 10px 30px 20px 10px;
 }

@@ -2,18 +2,26 @@
     display: grid;
     grid-template-columns: auto auto;
     gap: 2vh;
-    padding: 1vh 1vh 1vh 0vh;
+    padding: 6vh 2vh 6vh 24vw;
+    background-image: var(--interest-bg);
 
     .img-container {
-        background-image: url('../../../../assets/images/dp.jpg');
+        // background-image: url('../../../../assets/images/dp.jpg');
         border-radius: 12px 12px 12px 12px;
         overflow: hidden;
         height: 42vh;
-        width: 38vw;
+        // width: 38vw;
         position: relative;
         background-position: top;
         background-repeat: no-repeat;
         background-size:cover;
+        display: block;
+        // width: 100%;
+        // height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+        // overflow: hidden;
+        
 
         .blur-container {
             left: -20%;
@@ -38,5 +46,24 @@
             bottom: 4vh;
             left: 4vh;
         }
+
+        
     }
+}
+.singing{
+    background-image: url('../../../../assets/images/sing.jpg');
+}
+.badminton{
+    background-image: url('../../../../assets/images/badminton.jpg');
+}
+.football{
+    background-image: url('../../../../assets/images/football.jpg');
+}
+.chess{
+    background-image: url('../../../../assets/images/chess.jpg');
+}
+
+.img-container:hover {
+    transform: scale(0.95);
+    box-shadow: 0 4px 8px 0 var(--one-project-border), 0 6px 20px 0 var(--one-project-border);
 }

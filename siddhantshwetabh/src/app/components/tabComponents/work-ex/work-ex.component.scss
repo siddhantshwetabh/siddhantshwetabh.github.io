@@ -1,12 +1,13 @@
 .work-container {
     padding: 1vh;
-    background-color: blue;
-    
+    background-image: var(--work-ex-bg);
+    padding-left: 24vw;
+
     .work-card {
         padding: 20px;
-        background-color: white;
+        background-color: inherit;
         border-radius: 12px;
-        font-size: 24px;
+        font-size: 16px;
         line-height: 40px;
         text-align: justify;
         text-justify: inter-word;

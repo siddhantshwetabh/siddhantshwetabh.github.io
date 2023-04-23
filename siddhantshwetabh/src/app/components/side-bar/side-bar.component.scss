@@ -1,10 +1,11 @@
 .side-bar-container {
-    min-height: 86vh;
-    min-width: 20vw;
-    // min-height: 100vh;
-    // min-width: 20vh;
-    object-fit: contain;
-
+    // min-height: 86vh;
+    // min-width: 20vw;
+    min-height: 100vh;
+    min-width: 24vw;
+    // object-fit: contain;
+    position: absolute;
+    
     .top {
         height: 20vh !important;
         display: flex;
@@ -21,19 +22,28 @@
 
             .dp {
                 height: 16vh;
+                background-image: url('../../../assets/images/singing.jpeg');
+                background-size: contain;
+                background-position-y: center;
+                transform: scale(2);
+                background-repeat: no-repeat;
             }
         }
     }
 
     .menu {
-        width: 18vw;
-        min-height: 86vh;
-        margin: 1vh;
-        background: red;
+        // width: 18vw;
+        // min-height: 86vh;
+        // margin: 1vh;
+        width: 20vw;
+        min-height: 92vh;
+        margin: 3vh;
+        background-image: var(--side-bar-bg);
         font-size: 20px;
         float: left;
         position: fixed;
         border-radius: 8px;
+        box-shadow: 0 4px 8px 0 var(--one-project-border), 0 6px 20px 0 var(--one-project-border);
     }
 
     .menu>div {
@@ -54,11 +64,13 @@
         color: #fdfff4;
         font-size: 16px;
         line-height: 20px;
+        margin: 2px 0px;
     }
 
     .menu>div:hover {
         color: #2a2a2a;
-        background-color: #fdfff4;
+        // background-color: #fdfff4;
+        background-image: var(--side-bar-select-gradient);
     }
 
     .menu>div::after,
@@ -90,7 +102,8 @@
 
 .selected {
     color: #2a2a2a !important;
-    background-color: #fdfff4;
+    // background-color: #fdfff4;
+    background-image: var(--side-bar-select-gradient);
 }
 
 .selected::after {

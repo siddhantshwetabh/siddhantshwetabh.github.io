@@ -16,23 +16,28 @@ export class SideBarComponent {
   ngOnInit() {
     this.router.events.subscribe((event) => {
       event instanceof NavigationEnd ?
-      this.currentRoute = event.url
-      : null
+        this.currentRoute = event.url
+        : null
     })
   }
 
   sidebarOptionClicked(option: any) {
-    this.sideBarOptions.forEach((op: any) => {
-      if (op == option) {
-        op.isActive = true;
-        // this.router.navigate([op.routeLink]);
-        this.router.navigate(['.'], { fragment: op.routeLink });
-      }
-      else {
-        op.isActive = false
-      }
-    })
-    console.log(this.sideBarOptions)
+    if (option.name === 'Resume') {
+      window.open('../../../assets/Siddhanta_Shwetabh_Resume.pdf', '_blank');
+    }
+    else {
+      this.sideBarOptions.forEach((op: any) => {
+        if (op == option) {
+          op.isActive = true;
+          // this.router.navigate([op.routeLink]);
+          this.router.navigate(['.'], { fragment: op.routeLink });
+        }
+        else {
+          op.isActive = false
+        }
+      })
+      console.log(this.sideBarOptions)
+    }
   }
 
   sideBarOptions = [
@@ -41,11 +46,11 @@ export class SideBarComponent {
       "isActive": false,
       "routeLink": "intro"
     },
-    // {
-    //   "name": "Work Experience",
-    //   "isActive": false,
-    //   "routeLink": "workex"
-    // },
+    {
+      "name": "Work Experience",
+      "isActive": false,
+      "routeLink": "workex"
+    },
     {
       "name": "Projects",
       "isActive": false,
@@ -61,11 +66,11 @@ export class SideBarComponent {
       "isActive": false,
       "routeLink": "education"
     },
-    {
-      "name": "Contact",
-      "isActive": false,
-      "routeLink": "contact"
-    },
+    // {
+    //   "name": "Contact",
+    //   "isActive": false,
+    //   "routeLink": "contact"
+    // },
     {
       "name": "Interests",
       "isActive": false,

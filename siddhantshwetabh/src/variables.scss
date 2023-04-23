@@ -1,7 +1,31 @@
 :root {
     --lightest: #FFFBFF;
+
     --one: #F1DABF;
     --two: #92817A;
     --three: #362417;
     --darkest: #000500;
+    --side-bar-selected:#FFFBFF;
+
+    //gradient section
+    
+    // --darkest:linear-gradient(to right,#000500, #000500);
+    --side-bar-bg:linear-gradient(to bottom,#000000, #03045E);
+    --side-bar-select-gradient: linear-gradient(to left,#FFFBFF, #F1DABF);
+
+    --intro-bg: linear-gradient(to right,#FFFBFF, #F1DABF);
+
+    --work-ex-bg:linear-gradient(to left,#FFFBFF, #CED4DA);
+
+    --projects-bg:linear-gradient(to right,#FFFBFF, #90E0EF);
+    --one-project-bg:radial-gradient(#FFFFFF, #CAF0F8);
+    --one-project-border:#00B4D8;
+
+    --skills-bg:linear-gradient(to left,#FFFBFF, #79C7CC);
+
+    --education-bg:linear-gradient(to right,#FFFBFF, #90E0EF);
+    
+    --interest-bg:linear-gradient(to right,#FFFBFF, #00B4D8);
+    ;
+    
 }

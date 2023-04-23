@@ -88,13 +88,13 @@ export class ProjectsComponent {
       "Configuration Manager Screen with very dynamic filter group reposition and filter mechanism."
     ]
   },
-  {
-    "name": "",
-    "desc": "",
-    "myRole": "",
-    "myTasks":[
+  // {
+  //   "name": "",
+  //   "desc": "",
+  //   "myRole": "",
+  //   "myTasks":[
       
-    ]
-  }
+  //   ]
+  // }
   ]
 }
