@@ -1,0 +1,13 @@
+<div class="side-bar-container">
+    <div class="menu">
+        <div class="top">
+            <div class="image-container">
+                <img class="dp" src="/assets/images/dp.jpg" alt="Siddhant" />
+            </div>
+        </div>
+        <div *ngFor="let option of sideBarOptions" (click)="sidebarOptionClicked(option)"
+            [ngClass]="(currentRoute === '/#'+option.routeLink)?'selected':''">
+            <div class="tab">{{option.name}}</div>
+        </div>
+    </div>
+</div>

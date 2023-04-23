@@ -1,0 +1,120 @@
+.side-bar-container {
+    min-height: 86vh;
+    min-width: 20vw;
+    // min-height: 100vh;
+    // min-width: 20vh;
+    object-fit: contain;
+
+    .top {
+        height: 20vh !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        pointer-events: none;
+
+        .image-container {
+            height: 16vh;
+            width: 16vh;
+            border-radius: 50%;
+            border: 3px white;
+            overflow: hidden;
+
+            .dp {
+                height: 16vh;
+            }
+        }
+    }
+
+    .menu {
+        width: 18vw;
+        min-height: 86vh;
+        margin: 1vh;
+        background: red;
+        font-size: 20px;
+        float: left;
+        position: fixed;
+        border-radius: 8px;
+    }
+
+    .menu>div {
+        cursor: pointer;
+        position: relative;
+        top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 96%;
+        height: 50px;
+        text-align: center;
+        float: right;
+        border-radius: 8px 0 0 8px;
+        transition: color 0.5s;
+        color: #fdfff4;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .menu>div:hover {
+        color: #2a2a2a;
+        background-color: #fdfff4;
+    }
+
+    .menu>div::after,
+    .menu>div::before {
+        content: '';
+        position: absolute;
+        top: -50px;
+        right: 0;
+        width: 30px;
+        height: 50px;
+        border-radius: 0 0 8px 0;
+        z-index: -1;
+    }
+
+    .menu>div::before {
+        top: auto;
+        bottom: -50px;
+        border-radius: 0 8px 0 0;
+    }
+
+    .menu>div:hover::after {
+        box-shadow: 0 25px 0 0 #fdfff4;
+    }
+
+    .menu>div:hover::before {
+        box-shadow: 0 -25px 0 0 #fdfff4;
+    }
+}
+
+.selected {
+    color: #2a2a2a !important;
+    background-color: #fdfff4;
+}
+
+.selected::after {
+    box-shadow: 0 25px 0 0 #fdfff4;
+}
+
+.selected::before {
+    box-shadow: 0 -25px 0 0 #fdfff4;
+}
+
+.selected::after,
+.selected::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: 0;
+    width: 30px;
+    height: 50px;
+    border-radius: 0 0 8px 0;
+    z-index: -1;
+}
+
+.selected::before {
+    top: auto;
+    bottom: -50px;
+    border-radius: 0 8px 0 0;
+}

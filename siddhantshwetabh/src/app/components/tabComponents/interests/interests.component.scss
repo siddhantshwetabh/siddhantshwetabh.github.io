@@ -1,0 +1,42 @@
+.interests-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2vh;
+    padding: 1vh 1vh 1vh 0vh;
+
+    .img-container {
+        background-image: url('../../../../assets/images/dp.jpg');
+        border-radius: 12px 12px 12px 12px;
+        overflow: hidden;
+        height: 42vh;
+        width: 38vw;
+        position: relative;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size:cover;
+
+        .blur-container {
+            left: -20%;
+            background: black;
+            right: 0;
+            bottom: -10%;
+            position: absolute;
+            -moz-filter: blur(6px);
+            -o-filter: blur(6px);
+            -ms-filter: blur(6px);
+            filter: blur(30px);
+            height: 10vh;
+            width: 140%;
+        }
+
+        .text-container {
+            font-weight: 700;
+            font-size: 24px;
+            filter: blur(0px);
+            color: white;
+            position: absolute;
+            bottom: 4vh;
+            left: 4vh;
+        }
+    }
+}
