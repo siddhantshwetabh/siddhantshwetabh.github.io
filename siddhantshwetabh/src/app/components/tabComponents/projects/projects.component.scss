@@ -15,8 +15,6 @@
         padding: 6vh 2vh 6vh 2vh;
         // width: 78vw;
 
-
-
         .one-project-card {
             padding: 20px 20px 0px 20px;
             // background-color: white;
@@ -56,6 +54,8 @@
                 text-indent: 4em;
                 margin: 10px 0px;
                 line-height: 22px;
+                 text-align: justify;
+                 text-justify: inter-word;
             }
 
             .my-role {
@@ -69,12 +69,16 @@
                 text-indent: 4em;
                 margin: 10px 0px;
                 line-height: 22px;
+                text-align: justify;
+                 text-justify: inter-word;
             }
 
             .one-task {
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 24px;
+                text-align: justify;
+                 text-justify: inter-word;
                 // display: -webkit-box;
                 // max-width: 100%;
                 // -webkit-line-clamp: 4;
@@ -90,8 +94,8 @@
             border-radius: 12px;
             // font-size: 24px;
             // line-height: 40px;
-            text-align: justify;
-            text-justify: inter-word;
+            // text-align: justify;
+            // text-justify: inter-word;
             width: 70vw;
             cursor: pointer;
             transition: 700ms ease-out;
@@ -138,13 +142,17 @@
                 font-size: 18px;
                 font-weight: 400;
                 line-height: 26px;
-                // display: -webkit-box;
-                // max-width: 100%;
-                // -webkit-line-clamp: 4;
-                // -webkit-box-orient: vertical;
-                // overflow: hidden;
-                // line-height: 22px;
             }
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .one-project-card:focus {
+        width: 100% !important;
+        height: fit-content !important;
+    }
+    .one-project-card{
+        width: 100% !important;
     }
 }

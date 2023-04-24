@@ -2,9 +2,12 @@
 @import './shortcutCss.scss';
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import './variables.scss';
+
 html,
 body {
   height: 100%;
+  // width: 100%;
+  // display: block !important;
 }
 
 html {
@@ -25,7 +28,7 @@ body::-webkit-scrollbar {
 // }
 
 body::-webkit-scrollbar-track {
-  background-image: linear-gradient(to top,#FFFBFF, #f9eee3);
+  background-image: linear-gradient(to top, #FFFBFF, #f9eee3);
   // border-radius: 100px;
 }
 
@@ -68,7 +71,8 @@ body::-webkit-scrollbar-thumb {
 .tooltip .tooltiptext::after {
   content: " ";
   position: absolute;
-  bottom: 100%;  /* At the top of the tooltip */
+  bottom: 100%;
+  /* At the top of the tooltip */
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
@@ -76,6 +80,12 @@ body::-webkit-scrollbar-thumb {
   border-color: transparent transparent #000500 transparent;
 }
 
-.side-bar-space{
-  padding-left: 24vw !important;
+@media screen and (min-width: 769px) {
+  .element {
+    /* Apply some styles */
+  }
+
+  .side-bar-space {
+    padding-left: 24vw !important;
+  }
 }

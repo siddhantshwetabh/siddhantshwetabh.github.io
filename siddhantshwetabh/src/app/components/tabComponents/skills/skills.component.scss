@@ -1,43 +1,54 @@
-.skills-main{
+.skills-main {
     padding: 6vh 2vh 6vh 2vh;
     background-image: var(--skills-bg);
     color: var(--darkest);
 
-    .my-skills{
+    .my-skills {
         font-size: 30px;
         font-weight: 600;
         padding: 0vh 5vh 1vh 5vh;
     }
 
-    .skills-container{
-        height: 70vh;
+    .skills-container {
+        // height: 70vh;
         display: flex;
         flex-wrap: wrap;
-    .one-skill{
-        width: 25%;
-        margin: 3%;
-        cursor: pointer;
-        border-radius: 12px;
-        background-image: var(--one-skill);
-        box-shadow: 0 4px 8px 0 var(--one-skill-border), 0 6px 20px 0 var(--one-skill-border);
-        transition: transform 0.5s ease;
-        object-fit: contain;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        .icon{
 
-        }
-        .title{
+        .one-skill {
+            width: 27%;
+            margin: 3%;
+            cursor: pointer;
+            border-radius: 12px;
+            background-image: var(--one-skill);
+            box-shadow: 0 4px 8px 0 var(--one-skill-border), 0 6px 20px 0 var(--one-skill-border);
+            transition: transform 0.5s ease;
+            object-fit: contain;
+            overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
+            aspect-ratio: 1;
+
+            .icon {
+                display: none;
+            }
+
+            .title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+            }
+        }
+
+        :hover {
+            transform: scale(1.1);
         }
     }
-    :hover{
-        transform: scale(1.1);
-    }
 }
+
+@media screen and (min-width: 768px) {
+    .one-skill {
+        height: 20vh;
+    }
 }

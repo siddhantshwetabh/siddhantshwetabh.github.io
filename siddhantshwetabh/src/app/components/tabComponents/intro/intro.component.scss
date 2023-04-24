@@ -1,17 +1,17 @@
 .intro-main {
     padding: 1vh;
     height: 100vh;
-    // padding-left: 32vw;
     background-image: var(--intro-bg);
-    // position: relative;
 
     .intro-text {
-        font-size: 28px;
+        font-size: 40px;
         font-weight: 600;
         display: flex;
         align-items: center;
         padding-top: 56vh;
         padding-left: 6vw;
+        // font-size: x-large;
+        padding-bottom: 4vh;
     }
 
     .intro-desc {
@@ -21,7 +21,6 @@
         -webkit-box-orient: vertical;
         overflow: hidden;
         font-size: 16px;
-        margin-top: -24px;
         font-weight: 400;
         text-indent: 12px;
         padding-left: 6vw;
@@ -29,7 +28,7 @@
     .intro-desc:hover {
         display: -webkit-box;
         max-width: 85%;
-        -webkit-line-clamp:4;
+        -webkit-line-clamp:8;
         -webkit-box-orient: vertical;
         overflow: hidden;
         font-size: 17px;
@@ -44,14 +43,16 @@
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    right: 13vh;
-    top: 5vh;
+    right: 5vw;
+    top: 7vh;
+    flex-wrap: wrap;
 
     .icon-container {
         width: 60px;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 10px 0px;
 
         .linkedIn-img {
             height: 24px;
@@ -66,4 +67,10 @@
 .written-container {
     display: flex;
     justify-content: end;
+}
+
+@media screen and (max-width: 768px) {
+    .intro-text {
+        font-size: 26px !important;
+    }
 }

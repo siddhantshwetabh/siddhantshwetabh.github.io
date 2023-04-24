@@ -8,7 +8,8 @@ import { NavigationEnd, Router } from "@angular/router";
   styleUrls: ["./side-bar.component.scss"],
 })
 export class SideBarComponent {
-  currentRoute: any
+  currentRoute: any;
+  isDesktopView: any;
   constructor(private router: Router, private scroller: ViewportScroller,) {
 
   }
@@ -19,6 +20,9 @@ export class SideBarComponent {
         this.currentRoute = event.url
         : null
     })
+
+    this.isDesktopView = window.innerWidth > 768 ? true : false;
+    console.log(this.isDesktopView, window.innerWidth)
   }
 
   sidebarOptionClicked(option: any) {

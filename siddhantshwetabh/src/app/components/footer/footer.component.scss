@@ -1,4 +1,4 @@
-.footer-main{
+.footer-main {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,4 +7,10 @@
     min-height: 5vh;
     padding: 0% 2%;
     font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-main {
+        font-size: 8px;
+    }
 }

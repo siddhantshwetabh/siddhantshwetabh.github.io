@@ -1,15 +1,6 @@
 <div class="header-main">
-    <div class="left-side">
-        <div class="float-left"> Siddhanta Shwetabh</div>
-    </div>
-    <div class="right-side">
-        <div class="float-right">
-        </div>
-        <div class="float-right">
-        </div>
-        <div class="float-right">
-            <mat-icon>account_circle</mat-icon>
-        </div>
-
+    <div *ngFor="let option of sideBarOptions" (click)="sidebarOptionClicked(option)"
+        [ngClass]="(currentRoute === '/#'+option.routeLink)?'selected':''" class="tab">
+        {{option.name}}
     </div>
 </div>
