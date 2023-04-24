@@ -1,20 +1,22 @@
 .intro-main {
     padding: 1vh;
     height: 100vh;
-    padding-left: 35vw;
+    // padding-left: 32vw;
     background-image: var(--intro-bg);
+    // position: relative;
 
     .intro-text {
-        font-size: 32px;
+        font-size: 28px;
         font-weight: 600;
         display: flex;
         align-items: center;
         padding-top: 56vh;
+        padding-left: 6vw;
     }
 
     .intro-desc {
         display: -webkit-box;
-        max-width: 95%;
+        max-width: 85%;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         overflow: hidden;
@@ -22,5 +24,46 @@
         margin-top: -24px;
         font-weight: 400;
         text-indent: 12px;
+        padding-left: 6vw;
     }
+    .intro-desc:hover {
+        display: -webkit-box;
+        max-width: 85%;
+        -webkit-line-clamp:4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        font-size: 17px;
+        margin-top: -24px;
+        font-weight: 400;
+        text-indent: 12px;
+    }
+}
+
+.contact-main {
+    padding: 1vh;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 13vh;
+    top: 5vh;
+
+    .icon-container {
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .linkedIn-img {
+            height: 24px;
+        }
+    }
+
+    .value {
+        cursor: pointer;
+    }
+}
+
+.written-container {
+    display: flex;
+    justify-content: end;
 }

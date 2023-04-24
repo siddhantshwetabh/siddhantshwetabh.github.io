@@ -1,16 +1,21 @@
-<div class="projects-container">
-    <div class="one-project-card" *ngFor="let pro of projects" tabindex="0">
-        <div class="project-name">
-            {{pro.name}}
+<div class="projects-main side-bar-space">
+    <div class="my-projects">
+        My Projects <br>
+    </div>
+    <div class="projects-container ">
+        <div class="one-project-card" *ngFor="let pro of projects" tabindex="0">
+            <div class="project-name">
+                {{pro.name}}
+            </div>
+            <div class="project-desc">
+                {{pro.desc}}
+            </div>
+            <div class="my-role">
+                {{pro.myRole}}
+            </div>
+            <ul>
+                <li *ngFor="let task of pro.myTasks" class="one-task">{{task}}</li>
+            </ul>
         </div>
-        <div class="project-desc">
-            {{pro.desc}}
-        </div>
-        <div class="my-role">
-            {{pro.myRole}}
-        </div>
-        <ul>
-            <li *ngFor="let task of pro.myTasks" class="one-task">{{task}}</li>
-        </ul>
     </div>
 </div>

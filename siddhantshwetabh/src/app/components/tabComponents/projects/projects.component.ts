@@ -14,7 +14,8 @@ export class ProjectsComponent {
     "myTasks":[
       " Visualizing information and forecast using Bar Graphs from Chart.js",
       " Option to download the table data as PDF and Excel",
-      " Click on a bar from Bar chart to see respective Data"
+      " Click on a bar from Bar chart to see respective Data",
+      " Exported Chart from CharJS to PDF"
     ]
   },
   {

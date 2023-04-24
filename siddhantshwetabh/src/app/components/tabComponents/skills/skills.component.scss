@@ -1,14 +1,31 @@
 .skills-main{
-    padding: 6vh 2vh 6vh 24vw;
+    padding: 6vh 2vh 6vh 2vh;
     background-image: var(--skills-bg);
-    height: 70vh;
-    display: flex;
-    flex-wrap: wrap;
+    color: var(--darkest);
 
+    .my-skills{
+        font-size: 30px;
+        font-weight: 600;
+        padding: 0vh 5vh 1vh 5vh;
+    }
+
+    .skills-container{
+        height: 70vh;
+        display: flex;
+        flex-wrap: wrap;
     .one-skill{
         width: 25%;
         margin: 3%;
         cursor: pointer;
+        border-radius: 12px;
+        background-image: var(--one-skill);
+        box-shadow: 0 4px 8px 0 var(--one-skill-border), 0 6px 20px 0 var(--one-skill-border);
+        transition: transform 0.5s ease;
+        object-fit: contain;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
         .icon{
 
@@ -19,4 +36,8 @@
             align-items: center;
         }
     }
+    :hover{
+        transform: scale(1.1);
+    }
+}
 }
