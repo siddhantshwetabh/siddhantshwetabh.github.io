@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -13,4 +13,9 @@ export class AppComponent {
     this.isDesktopView = window.innerWidth > 768 ? true : false;
     console.log(this.isDesktopView, window.innerWidth)
   }
+
+  @HostListener('window:resize', ['$event'])  
+  onResize(event:any) {  
+    this.isDesktopView = window.innerWidth > 768 ? true : false;
+  } 
 }

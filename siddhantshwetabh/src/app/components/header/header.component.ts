@@ -1,5 +1,5 @@
 import { ViewportScroller } from "@angular/common";
-import { Component } from "@angular/core";
+import { Component, HostListener } from "@angular/core";
 import { NavigationEnd, Router } from "@angular/router";
 
 @Component({
@@ -24,6 +24,11 @@ export class HeaderComponent {
     this.isDesktopView = window.innerWidth > 768 ? true : false;
     console.log(this.isDesktopView, window.innerWidth)
   }
+
+  @HostListener('window:resize', ['$event'])  
+  onResize(event:any) {  
+    this.isDesktopView = window.innerWidth > 768 ? true : false;
+  } 
 
   sidebarOptionClicked(option: any) {
     if (option.name === 'Resume') {
