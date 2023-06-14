@@ -1,65 +1,78 @@
-.interests-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 2vh;
+.interests-main-container {
     padding: 6vh 2vh 6vh 2vh;
     background-image: var(--interest-bg);
 
-    .img-container {
-        // background-image: url('../../../../assets/images/dp.jpg');
-        border-radius: 12px 12px 12px 12px;
-        overflow: hidden;
-        height: 42vh;
-        // width: 38vw;
-        position: relative;
-        background-position: top;
-        background-repeat: no-repeat;
-        background-size:cover;
-        display: block;
-        // width: 100%;
-        // height: 100%;
-        object-fit: cover;
-        transition: transform 0.5s ease;
-        // overflow: hidden;
-        
+    .my-interests {
+        font-size: 22px;
+        font-weight: 600;
+        margin-top: -15px;
+        margin-bottom: 28px;
+        margin-left: 24vw;
+    }
 
-        .blur-container {
-            left: -20%;
-            background: black;
-            right: 0;
-            bottom: -10%;
-            position: absolute;
-            -moz-filter: blur(6px);
-            -o-filter: blur(6px);
-            -ms-filter: blur(6px);
-            filter: blur(30px);
-            height: 10vh;
-            width: 140%;
+    .interests-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 2vh;
+
+
+        .img-container {
+            // background-image: url('../../../../assets/images/dp.jpg');
+            border-radius: 12px 12px 12px 12px;
+            overflow: hidden;
+            height: 42vh;
+            // width: 38vw;
+            position: relative;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: block;
+            // width: 100%;
+            // height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+            // overflow: hidden;
+
+            .blur-container {
+                left: -20%;
+                background: black;
+                right: 0;
+                bottom: -10%;
+                position: absolute;
+                -moz-filter: blur(6px);
+                -o-filter: blur(6px);
+                -ms-filter: blur(6px);
+                filter: blur(30px);
+                height: 10vh;
+                width: 140%;
+            }
+
+            .text-container {
+                font-weight: 700;
+                font-size: 24px;
+                filter: blur(0px);
+                color: white;
+                position: absolute;
+                bottom: 4vh;
+                left: 4vh;
+            }
         }
-
-        .text-container {
-            font-weight: 700;
-            font-size: 24px;
-            filter: blur(0px);
-            color: white;
-            position: absolute;
-            bottom: 4vh;
-            left: 4vh;
-        }
-
-        
     }
 }
-.singing{
+
+.singing {
     background-image: url('../../../../assets/images/sing.jpg');
 }
-.badminton{
+
+.badminton {
     background-image: url('../../../../assets/images/badminton.jpg');
 }
-.football{
+
+.football {
     background-image: url('../../../../assets/images/football.jpg');
 }
-.chess{
+
+.chess {
     background-image: url('../../../../assets/images/chess.jpg');
 }
 

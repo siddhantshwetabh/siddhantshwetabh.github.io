@@ -4,9 +4,11 @@
     color: var(--darkest);
 
     .my-skills {
-        font-size: 30px;
+        font-size: 22px;
         font-weight: 600;
-        padding: 0vh 5vh 1vh 5vh;
+        padding: 0vh 5vh 1vh 20px;
+        margin-top: -15px;
+        // margin-bottom: -10px;
     }
 
     .skills-container {

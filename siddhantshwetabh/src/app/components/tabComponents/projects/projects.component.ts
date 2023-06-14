@@ -15,7 +15,7 @@ export class ProjectsComponent {
       " Visualizing information and forecast using Bar Graphs from Chart.js",
       " Option to download the table data as PDF and Excel",
       " Click on a bar from Bar chart to see respective Data",
-      " Exported Chart from CharJS to PDF"
+      " Exported Chart from ChartJS to PDF"
     ]
   },
   {
@@ -33,7 +33,7 @@ export class ProjectsComponent {
   {
     "name": "LTIVA FINASTRA",
     "desc": " The LTIVA FINASTRA App also called the CFO app is used to display financial metrics of different financial units inside the organisation.",
-    "myRole": " Solely responsible for creating the Web App structure with grid like view in the dashboard with different charts",
+    "myRole": " Solely created the Web App with grid like view in the dashboard with different charts",
     "myTasks":[
       "Integrated Tableau and Power-BI Reports into Angular",
       "Collaborated with Tableau and Power-BI developer and optimized view of the integrated parts",

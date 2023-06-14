@@ -3,11 +3,12 @@
     flex-wrap: wrap;
     background-image: var(--mobile-header-bg);
     position: fixed;
-    box-shadow: 0 14px 12px -6px var(--one);
+    // box-shadow: 0 14px 12px -6px var(--one);
     justify-content: space-around;
     width: 100%;
     z-index: 3;
-    
+    color: #fdfff4;
+
     .tab {
         padding: 2vh 0vh;
         font-size: 10px;

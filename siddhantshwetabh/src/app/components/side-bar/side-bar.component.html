@@ -1,9 +1,11 @@
 <div *ngIf="isDesktopView" class="side-bar-container">
     <div class="menu">
         <div class="top">
+            <div class="round-circle">
             <div class="image-container">
                 <div class="dp"  alt="Siddhant" ></div>
             </div>
+        </div>
         </div>
         <div *ngFor="let option of sideBarOptions" (click)="sidebarOptionClicked(option)" 
             [ngClass]="(currentRoute === '/#'+option.routeLink)?'selected':''">

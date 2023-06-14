@@ -5,7 +5,7 @@
     min-width: 24vw;
     // object-fit: contain;
     position: absolute;
-    
+
     .top {
         height: 20vh !important;
         display: flex;
@@ -13,20 +13,26 @@
         align-items: center;
         pointer-events: none;
 
-        .image-container {
-            height: 16vh;
-            width: 16vh;
+        .round-circle {
             border-radius: 50%;
-            border: 3px white;
-            overflow: hidden;
+            border: 2px solid #5DA0DB;
+            padding: 3px;
 
-            .dp {
+            .image-container {
                 height: 16vh;
-                background-image: url('../../../assets/images/singing.jpeg');
-                background-size: contain;
-                background-position-y: center;
-                transform: scale(2);
-                background-repeat: no-repeat;
+                width: 16vh;
+                border-radius: 50%;
+                border: 3px white;
+                overflow: hidden;
+
+                .dp {
+                    height: 16vh;
+                    background-image: url('../../../assets/images/singing.jpeg');
+                    background-size: contain;
+                    background-position-y: center;
+                    transform: scale(2);
+                    background-repeat: no-repeat;
+                }
             }
         }
     }
@@ -43,7 +49,7 @@
         float: left;
         position: fixed;
         border-radius: 8px;
-        box-shadow: 0 4px 8px 0 var(--one-project-border), 0 6px 20px 0 var(--one-project-border);
+        // box-shadow: 0 4px 8px 0 var(--one-project-border), 0 6px 20px 0 var(--one-project-border);
     }
 
     .menu>div {
@@ -68,7 +74,8 @@
     }
 
     .menu>div:hover {
-        color: #2a2a2a;
+        // color: #2a2a2a;
+        color: #fdfff4;
         // background-color: #fdfff4;
         background-image: var(--side-bar-select-gradient);
     }
@@ -92,26 +99,27 @@
     }
 
     .menu>div:hover::after {
-        box-shadow: 0 25px 0 0 #fdfff4;
+        box-shadow: 0 25px 0 0 var(--rounded-areas-selected-side-bar-option);
     }
 
     .menu>div:hover::before {
-        box-shadow: 0 -25px 0 0 #fdfff4;
+        box-shadow: 0 -25px 0 0 var(--rounded-areas-selected-side-bar-option);
     }
 }
 
 .selected {
-    color: #2a2a2a !important;
+    // color: #2a2a2a !important;
+    color: #fdfff4 !important; 
     // background-color: #fdfff4;
     background-image: var(--side-bar-select-gradient);
 }
 
 .selected::after {
-    box-shadow: 0 25px 0 0 #fdfff4;
+    box-shadow: 0 25px 0 0 var(--rounded-areas-selected-side-bar-option);
 }
 
 .selected::before {
-    box-shadow: 0 -25px 0 0 #fdfff4;
+    box-shadow: 0 -25px 0 0 var(--rounded-areas-selected-side-bar-option);
 }
 
 .selected::after,

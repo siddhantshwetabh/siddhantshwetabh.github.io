@@ -6,17 +6,22 @@
     --three: #362417;
     --darkest: #000500;
     --side-bar-selected:#FFFBFF;
-
+    --mat-step-icon-bg:#5DA0DB;
     //gradient section
     
     // --darkest:linear-gradient(to right,#000500, #000500);
 
-    --mobile-header-bg:  linear-gradient(to top,#FFFBFF, #F1DABF);
+    // --mobile-header-bg:  linear-gradient(to top,#FFFBFF, #F1DABF);
+    --mobile-header-bg:linear-gradient(to bottom,#000000, #03045E);
+    --side-bar-bg:radial-gradient(#000000, #000132);
+    --rounded-areas-selected-side-bar-option:#020324;
+    --side-bar-select-gradient: radial-gradient(#000139, var(--rounded-areas-selected-side-bar-option));
+    
+    // --side-bar-bg:linear-gradient(to bottom,#000000, #03045E);
 
-    --side-bar-bg:linear-gradient(to bottom,#000000, #03045E);
-    --side-bar-select-gradient: linear-gradient(to left,#FFFBFF, #F1DABF);
+    // --side-bar-select-gradient: linear-gradient(to left,#FFFBFF, #F1DABF);
 
-    --intro-bg: linear-gradient(to right,#FFFBFF, #F1DABF);
+    // --intro-bg: linear-gradient(to right,#FFFBFF, #F1DABF);
 
     --work-ex-bg:linear-gradient(to left,#FFFBFF, #CED4DA);
 

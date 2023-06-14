@@ -22,6 +22,7 @@ import { EducationComponent } from './components/tabComponents/education/educati
 import { ContactComponent } from './components/tabComponents/contact/contact.component';
 import { InterestsComponent } from './components/tabComponents/interests/interests.component';
 import { ResumeComponent } from './components/tabComponents/resume/resume.component';
+import {MatStepperModule} from '@angular/material/stepper';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { ResumeComponent } from './components/tabComponents/resume/resume.compon
     MatInputModule,
     ReactiveFormsModule,
     FormsModule,
+    MatStepperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

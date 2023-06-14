@@ -81,11 +81,39 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media screen and (min-width: 769px) {
-  .element {
-    /* Apply some styles */
-  }
+  // .element {
+  //   /* Apply some styles */
+  // }
 
   .side-bar-space {
     padding-left: 24vw !important;
   }
 }
+
+.mat-step-icon-content {
+  display: none !important;
+}
+
+.mat-stepper-horizontal, .mat-stepper-vertical {
+  background-color: inherit !important;
+}
+
+.mat-step-icon {
+  background-color: var(--mat-step-icon-bg) !important;
+}
+
+.mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
+  background-color: var(--mat-step-icon-bg) !important;
+}
+
+.mat-step-header.cdk-keyboard-focused, .mat-step-header.cdk-program-focused, .mat-step-header:hover:not([aria-disabled]), .mat-step-header:hover[aria-disabled=false] {
+  background-color: transparent !important;
+}
+
+.mat-step-label {
+  overflow: visible !important;
+  white-space: wrap !important;
+}
+// .mat-step-label-selected {
+//   font-size: 18px !important;
+// }
