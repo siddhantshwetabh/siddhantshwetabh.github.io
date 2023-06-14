@@ -55,16 +55,16 @@ export class HeaderComponent {
       "isActive": false,
       "routeLink": "intro"
     },
-    {
-      "name": "Work Experience",
-      "isActive": false,
-      "routeLink": "workex"
-    },
     // {
-    //   "name": "Projects",
+    //   "name": "Work Experience",
     //   "isActive": false,
-    //   "routeLink": "projects"
+    //   "routeLink": "workex"
     // },
+    {
+      "name": "Projects",
+      "isActive": false,
+      "routeLink": "projects"
+    },
     {
       "name": "Skills",
       "isActive": false,

@@ -12,7 +12,8 @@
     // --darkest:linear-gradient(to right,#000500, #000500);
 
     // --mobile-header-bg:  linear-gradient(to top,#FFFBFF, #F1DABF);
-    --mobile-header-bg:linear-gradient(to bottom,#000000, #03045E);
+    // --mobile-header-bg:linear-gradient(to bottom,#000000, #03045E);
+    --mobile-header-bg:linear-gradient(to bottom,#000139, var(--rounded-areas-selected-side-bar-option));
     --side-bar-bg:radial-gradient(#000000, #000132);
     --rounded-areas-selected-side-bar-option:#020324;
     --side-bar-select-gradient: radial-gradient(#000139, var(--rounded-areas-selected-side-bar-option));

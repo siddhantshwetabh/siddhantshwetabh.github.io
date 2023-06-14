@@ -22,12 +22,15 @@
         <mat-step *ngFor="let pro of projects">
             <ng-template matStepLabel>
                 <div class="project-name">{{pro.name}}</div>
-                <div class="project-desc">{{pro.desc}}</div>
+                
             </ng-template>
             <div class="">
                <!-- <div class="my-role-text"> </div> -->
+               <div class="project-desc">{{pro.desc}}</div>
+               <br>
                 <div class="my-role">
-                    My Role :  {{pro.myRole}}
+                    <span class="my-role-text"> My Role : </span>
+                    {{pro.myRole}}
                 </div>
                 <ul>
                     <li *ngFor="let task of pro.myTasks" class="one-task">{{task}}</li>
